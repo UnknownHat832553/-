@@ -62,7 +62,7 @@ async def get_role(ctx):
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=nextcord.Game(name="เป็นบอทแอดมินคับ😙"))
+    await bot.change_presence(activity=nextcord.Game(name="เป็นบอทรับยศ"))
     print(f"{bot.user}")
     bot.add_view(RoleView())
 
