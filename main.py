@@ -3,6 +3,8 @@ from nextcord.ext import commands, tasks
 from nextcord.ui import View, Button
 import os
 
+from server import server_on
+
 role_id = 1350768567242588170
 
 message_to_edit = None
@@ -66,4 +68,5 @@ async def on_ready():
     print(f"{bot.user}")
     bot.add_view(RoleView())
 
+server_on()
 bot.run(os.getenv('TOKEN'))
