@@ -2,7 +2,7 @@ import nextcord
 from nextcord.ext import commands
 from nextcord.ui import View, Button
 
-gameZone = 1350768567242588170
+gameZone = 1362643842947354724
 Mine = 1362644006726668448
 FF = 1362644072497418360
 Valo = 1362644225992298507
@@ -41,13 +41,13 @@ class RoleView(View):
     @nextcord.ui.button(label="เช็คยศ", style=nextcord.ButtonStyle.gray, emoji="⚙")
     async def check_role(self, button: Button, interaction: nextcord.Interaction):
         role_map = {
-            1350768567242588170: "<:gamezone:1352645240917594163>",
-            1362644006726668448: "<:mine:1352229175964078180>",
-            1362644072497418360: "<:ff:1352228437913374735>",
-            1362644225992298507: "<:valo:1352308615444434944>",
-            1362647100541763604: "<:roblox:1352227651825303582>",
-            1362647291315622059: "<:rov:1352228946070212610>",
-            1362647422496538785: "<:pubg:1352308413622653058>"
+            1350768567242588170: "<:1352645240917594163:>",
+            1362644006726668448: "<:1352229175964078180:>",
+            1362644072497418360: "<:1352228437913374735:>",
+            1362644225992298507: "<:1352308615444434944:>",
+            1362647100541763604: "<:1352227651825303582:>",
+            1362647291315622059: "<:1352228946070212610:>",
+            1362647422496538785: "<:1352308413622653058:>"
         }
         roles = [
             f"{emoji} {interaction.guild.get_role(role_id).name}"
@@ -64,10 +64,8 @@ class RoleGame(commands.Cog):
     @commands.command()
     @commands.has_permissions(administrator=True)
     async def rolegame(self, ctx):
-        guild = ctx.guild
-        icon_url = guild.icon.url if guild.icon else None
         embed = nextcord.Embed(
-            title="__ระบบรับยศ @GAME zone__",
+            title="__ระบบรับยศ GAME Zone__",
             description=(
                 "`🟢` **รับยศเพื่อ ช่องเกม**\n"
                 "- กดปุ่มด้านล่างเพื่อรับยศ\n"
