@@ -13,7 +13,7 @@ PUBG = 1362647422496538785
 class RoleView(View):
     def __init__(self):
         super().__init__(timeout=None)
-        self.add_item(self.create_role_button("GameZone", nextcord.PartialEmoji(name="gamezone", id=1352645240917594163), 1350768567242588170))
+        self.add_item(self.create_role_button("GameZone", nextcord.PartialEmoji(name="gamezone", id=1352645240917594163), 1362643842947354724))
         self.add_item(self.create_role_button("Minecraft", nextcord.PartialEmoji(name="mine", id=1352229175964078180), 1362644006726668448))
         self.add_item(self.create_role_button("FreeFire", nextcord.PartialEmoji(name="ff", id=1352228437913374735), 1362644072497418360))
         self.add_item(self.create_role_button("Valorant", nextcord.PartialEmoji(name="valo", id=1352308615444434944), 1362644225992298507))
