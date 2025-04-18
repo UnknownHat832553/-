@@ -43,7 +43,7 @@ class RoleMember(commands.Cog):
         guild = ctx.guild
         icon_url = guild.icon.url if guild.icon else None
         embed = nextcord.Embed(
-            title="__ระบบรับยศ @Verify__",
+            title="__ระบบรับยศ Verify__",
             description=(
                 "`🟢` **รับยศเพื่อ ดูเซิร์ฟ**\n"
                 "- กดปุ่มด้านล่างเพื่อรับยศ\n"
