@@ -74,8 +74,6 @@ class RoleGame(commands.Cog):
             ),
             color=0x780cc5
         )
-        if icon_url:
-            embed.set_thumbnail(url=icon_url)
         embed.set_image(url="http://upload-image.free.nf/files/1744953596_Untitled10_20250418121914.png")
         embed.set_footer(text=f"รับยศด้วยนะ~")
         await ctx.send(embed=embed, view=RoleView())
