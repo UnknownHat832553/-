@@ -41,7 +41,7 @@ class RoleView(View):
     @nextcord.ui.button(label="เช็คยศ", style=nextcord.ButtonStyle.gray, emoji="⚙")
     async def check_role(self, button: Button, interaction: nextcord.Interaction):
         role_ids = [
-            1350768567242588170,
+            1362643842947354724,
             1362644006726668448,
             1362644072497418360,
             1362644225992298507,
